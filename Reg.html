@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="login-dark">
+        <form method="post">
+            <h2 class="sr-only">Login Form</h2>
+            <div class="illustration"><i class="icon ion-ios-key"></i></div>
+            <div><h3 style="text-align:center">Sign Up!!</h3></div>
+            <div class="form-group"><input id="staff_Id" required class="form-control" type="number" name="staff_Id" value="" min=1 max="9999999" placeholder="Staff Id" >
+            <span id="id" style="float:center" class="alert-danger"></span></div>
+            <div class="form-group"><input class="form-control" required id="p1" type="password" name="password" value="" minlength="7" maxlength="14" placeholder="Password" onclick="PassValidate()"></div>  
+            <div class="form-group"><input class="form-control" required id="p2" type="password" name="cnf_password" value="" placeholder="Confirm Password" onchange="PassValidate()"></div> 
+            <div><span id="pass_err" style="float:center"  class="alert-danger"></span></div>
+            <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Sign Up</button>
+            <div class="form-group"><a href="login.html" class="btn btn-primary btn-block">Already Registered? Login</a>
+            </br>
+           
+        </form>
+            
+    </div>
+    <script src="signup_login.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
